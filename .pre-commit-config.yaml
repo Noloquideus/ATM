@@ -7,21 +7,25 @@ repos:
         language: system
         types: [python]
         pass_filenames: false
+        exclude: '\b__init__.py$'
       - id: black
         name: black
         entry: black --config ./pyproject.toml .
         language: system
         types: [python]
         pass_filenames: false
+        exclude: '\b__init__.py$'
       - id: flake8
         name: flake8
         entry: flake8 --config=pyproject.toml .
         language: system
         types: [python]
         pass_filenames: false
+        exclude: '\b__init__.py$'
       - id: ruff
         name: ruff
         entry: ruff check .
         language: system
-        types: [ python ]
+        types: [python]
         pass_filenames: false
+        exclude: '\b__init__.py$'
