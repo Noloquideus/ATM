@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  banksystem:
+    container_name: banksystem_container
+    ports:
+      - "6100:6100"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=banksystem
+    image: postgres:15.5-alpine3.18
+    command: postgres -c port=6100
