@@ -28,7 +28,7 @@ cd ATM
 ```
 Install dependencies:
 ```
-pip install -r requirements.txt
+install_dependencies.bat
 ```
 
 ## Features
